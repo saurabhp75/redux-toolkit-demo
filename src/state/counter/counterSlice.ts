@@ -19,6 +19,7 @@ const counterSlice = createSlice({
     decrement: (state) => {
       state.value -= 1;
     },
+    // PayloadAction can be an object too
     incrementByAmount: (state, action: PayloadAction<number>) => {
       state.value += action.payload;
     },
